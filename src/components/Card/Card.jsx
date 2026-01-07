@@ -4,15 +4,12 @@ import "./Card.css";
 function Card(props) {
 
     return <>
-        <div style={{ border: "1px red solid"}}>
-
+        <div className="card-container">
             <div className="image-container">
-            <ImageStatus isSoldOut={true} isSale={true}/>
+                <ImageStatus isSoldOut={props.isSoldOut} isSale={props.isSale} imageURL={props.imageURL}/>
             </div>
-
             <p>{props.titulo}</p>
             <p>{props.precio}</p>
-
         </div>
     </>
 }

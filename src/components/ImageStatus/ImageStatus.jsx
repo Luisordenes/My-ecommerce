@@ -1,11 +1,10 @@
-import game from "../../assets/images/Fifa26.jpeg";
 import "./ImageStatus.css";
 
 function ImageStatus(props) {
 
     return (
         <div> 
-          <img className="image-border" src={game}></img>
+          <img className="image-border" src={props.imageURL}></img>
 
           {props.isSale && (
             <div className="descuento-overlay">

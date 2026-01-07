@@ -1,19 +1,21 @@
 .image-border {
     z-index: 1;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     display: block;
 }
 
 .descuento-overlay {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 6px;
+    right: 6px;
     z-index: 2;
 }
 
 .descuento-tip {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: #ff3d00;
     color: white;
@@ -21,7 +23,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 18px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     cursor: default;
     text-align: center;
@@ -30,7 +32,7 @@
 
 .agotado-overlay {
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     left: 0;
     width: 100%;
     display: flex;
@@ -39,7 +41,7 @@
 }
 
 .agotado-tip {
-    width: 80%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,5 +50,5 @@
     border-radius: 30px;
     padding: 12px 0;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 15px;
 }

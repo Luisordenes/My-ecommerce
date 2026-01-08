@@ -12,11 +12,15 @@
     gap: 32px;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .navbar-title {
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 0;
-    white-space: nowrap;
 }
 
 .navbar-menu {
@@ -91,16 +95,16 @@
 }
 
 .search-input {
-  padding: 6px 12px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  margin-left: 16px;
-  font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-left: 16px;
+    font-size: 14px;
 }
 
 .search-input:focus {
-  box-shadow: 0 0 5px #ff3d00;
+    box-shadow: 0 0 5px #ff3d00;
 }
 
 .icon-btn {

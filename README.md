@@ -7,6 +7,7 @@ Componentes creados:
 - Footer
 - ImageStatus
 - Navbar
+- Logo
 
 Filtros creados:
 - Por oferta

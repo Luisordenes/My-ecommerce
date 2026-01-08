@@ -1,9 +1,13 @@
 import "./Navbar.css";
+import { Logo } from "../index";
 
 function Navbar({ onShowSales, onSearch, onSelectConsole, onSelectCategory }) {
   return (
     <nav className="navbar">
-      <h1 className="navbar-title">DigiGames</h1>
+      <div className="navbar-brand">
+        <Logo size={60} />
+        <h1 className="navbar-title">DigiGames</h1>
+      </div>
 
       <div className="navbar-menu">
 

@@ -1,0 +1,116 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #111;
+    color: white;
+    gap: 32px;
+}
+
+.navbar-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.dropdown-btn:hover {
+    color: #ff3d00;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 36px;
+    left: 0;
+    background-color: #222;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.dropdown-content span {
+    display: block;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.dropdown-content span:hover {
+    background-color: #333;
+    color: #ff3d00;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ofertas-btn {
+    background-color: #ff3d00;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ofertas-btn:hover {
+    background-color: #e63500;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.search-input {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 5px #ff3d00;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.icon-btn:hover {
+    color: #ff3d00;
+}

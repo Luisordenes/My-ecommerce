@@ -1,3 +1,32 @@
+# Proyecto Modulo 2: "Eccomerce DigiJuegos"
+
+Descripción: Venta de videojuegos digitales.
+
+Componentes creados:
+- Card
+- Footer
+- ImageStatus
+- Navbar
+
+Filtros creados:
+- Por oferta
+- Por busqueda
+- Por categoria
+- Por consola
+
+Pasos para ejecutar proyecto:
+1. Clonar desde repositorio
+   En terminal: git clone https://github.com/Luisordenes/My-ecommerce.git
+
+2. Entrar a la carpeta del proyecto
+   En terminal: cd My-ecommerce
+
+3. Instalar dependencias
+   En terminal: npm install
+   
+4. Ejecutar proyecto 
+   En terminal: npm run dev
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

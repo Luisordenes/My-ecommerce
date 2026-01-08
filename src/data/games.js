@@ -8,6 +8,8 @@ export const games = [
     isSoldOut: false,
     isSale: false,
     imageURL: images.Fifa26,
+    consola: "Play 5",
+    categoria: "Deporte"
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ export const games = [
     isSoldOut: true,
     isSale: false,
     imageURL: images.ArcRaiders,
+    consola: "Play 5",
+    categoria: "Accion"
   },
   {
     id: 3,
@@ -24,6 +28,8 @@ export const games = [
     isSoldOut: false,
     isSale: false,
     imageURL: images.Battlefield,
+    consola: "Play 5",
+    categoria: "Accion"
   },
   {
     id: 4,
@@ -32,6 +38,8 @@ export const games = [
     isSoldOut: false,
     isSale: false,
     imageURL: images.CallOfDuty7,
+    consola: "Play 5",
+    categoria: "Accion"
   },
   {
     id: 5,
@@ -40,6 +48,8 @@ export const games = [
     isSoldOut: false,
     isSale: true,
     imageURL: images.DemonSlayer2,
+    consola: "Play 5",
+    categoria: "Aventura"
   },
   {
     id: 6,
@@ -48,6 +58,8 @@ export const games = [
     isSoldOut: false,
     isSale: true,
     imageURL: images.DragonBallZ,
+    consola: "Play 5",
+    categoria: "Accion"
   },
   {
     id: 7,
@@ -56,6 +68,8 @@ export const games = [
     isSoldOut: true,
     isSale: false,
     imageURL: images.EldenRing,
+    consola: "Play 5",
+    categoria: "Aventura"
   },
   {
     id: 8,
@@ -64,6 +78,8 @@ export const games = [
     isSoldOut: false,
     isSale: true,
     imageURL: images.MetalGearSnakeEater,
+    consola: "Play 5",
+    categoria: "Accion"
   },
   {
     id: 9,
@@ -72,6 +88,8 @@ export const games = [
     isSoldOut: true,
     isSale: false,
     imageURL: images.MortalKombat,
+    consola: "Play 5",
+    categoria: "Accion"
   },
   {
     id: 10,
@@ -80,6 +98,8 @@ export const games = [
     isSoldOut: false,
     isSale: false,
     imageURL: images.SilentHill,
+    consola: "Play 5",
+    categoria: "Aventura"
   },
   {
     id: 11,
@@ -88,6 +108,8 @@ export const games = [
     isSoldOut: false,
     isSale: false,
     imageURL: images.SilkSong,
+    consola: "Play 4",
+    categoria: "Aventura"
   },
   {
     id: 12,
@@ -96,5 +118,7 @@ export const games = [
     isSoldOut: false,
     isSale: false,
     imageURL: images.TonyHawks34,
+    consola: "Play 4",
+    categoria: "Deporte"
   },
 ];

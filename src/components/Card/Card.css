@@ -1,0 +1,10 @@
+.image-container {
+    position: relative;
+}
+
+.card-container {
+  width: 100%;
+  max-width: 220px;
+  
+  padding: 10px;
+}

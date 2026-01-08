@@ -1,4 +1,4 @@
-# Proyecto Modulo 2: "Eccomerce DigiJuegos"
+# Proyecto Modulo 2: "Ecommerce DigiJuegos"
 
 Descripción: Venta de videojuegos digitales.
 
@@ -19,16 +19,16 @@ Filtros creados:
 
 Pasos para ejecutar proyecto:
 
-1. Clonar desde repositorio
+1. Clonar desde repositorio.
    En terminal: git clone https://github.com/Luisordenes/My-ecommerce.git
 
-2. Entrar a la carpeta del proyecto
+2. Entrar a la carpeta del proyecto.
    En terminal: cd My-ecommerce
 
-3. Instalar dependencias
+3. Instalar dependencias.
    En terminal: npm install
 
-4. Ejecutar proyecto 
+4. Ejecutar proyecto. 
    En terminal: npm run dev
 
 # React + Vite

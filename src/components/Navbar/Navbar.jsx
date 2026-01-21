@@ -1,34 +1,37 @@
 import "./Navbar.css";
-import { Logo } from "../index";
+import NavbarBrand from "./NavbarBrand";
+import Dropdown from "./Dropdown";
+import SearchBar from "./SearchBar";
 
-function Navbar({ onShowSales, onSearch, onSelectConsole, onSelectCategory }) {
+function Navbar({
+  onShowSales,
+  onSearch,
+  onSelectConsole,
+  onSelectCategory,
+}) {
   return (
     <nav className="navbar">
-      <div className="navbar-brand">
-        <Logo size={60} />
-        <h1 className="navbar-title">DigiGames</h1>
-      </div>
+      <NavbarBrand />
 
       <div className="navbar-menu">
+        <Dropdown
+          title="Consolas"
+          items={[
+            { text: "Todos", onClick: () => onSelectConsole("") },
+            { text: "Play 4", onClick: () => onSelectConsole("Play 4") },
+            { text: "Play 5", onClick: () => onSelectConsole("Play 5") },
+          ]}
+        />
 
-        <div className="dropdown">
-        <button className="dropdown-btn">Consolas</button>
-        <div className="dropdown-content">
-          <span onClick={() => onSelectConsole("")}>Todos</span>
-          <span onClick={() => onSelectConsole("Play 4")}>Play 4</span>
-          <span onClick={() => onSelectConsole("Play 5")}>Play 5</span>
-        </div>
-        </div>
-
-        <div className="dropdown">
-        <button className="dropdown-btn">Categorías</button>
-        <div className="dropdown-content">
-          <span onClick={() => onSelectCategory("")}>Todas</span>
-          <span onClick={() => onSelectCategory("Aventura")}>Aventura</span>
-          <span onClick={() => onSelectCategory("Accion")}>Acción</span>
-          <span onClick={() => onSelectCategory("Deporte")}>Deporte</span>
-        </div>
-        </div>
+        <Dropdown
+          title="Categorías"
+          items={[
+            { text: "Todas", onClick: () => onSelectCategory("") },
+            { text: "Aventura", onClick: () => onSelectCategory("Aventura") },
+            { text: "Acción", onClick: () => onSelectCategory("Accion") },
+            { text: "Deporte", onClick: () => onSelectCategory("Deporte") },
+          ]}
+        />
 
         <button className="ofertas-btn" onClick={onShowSales}>
           🔥 Ofertas
@@ -36,14 +39,7 @@ function Navbar({ onShowSales, onSearch, onSelectConsole, onSelectCategory }) {
       </div>
 
       <div className="navbar-actions">
-
-        <input
-        type="text"
-        placeholder="Buscar juegos..."
-        className="search-input"
-        onChange={(e) => onSearch(e.target.value)}
-        />
-
+        <SearchBar onSearch={onSearch} />
         <button className="icon-btn">👤</button>
         <button className="icon-btn">🛒</button>
       </div>

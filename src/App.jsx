@@ -21,7 +21,7 @@ function App() {
   filteredGames = filterByCategory(filteredGames, categorySelected);
 
   return (
-    <>
+    <div id="root">
       <Navbar
         onShowSales={() => setShowOnlySales(!showOnlySales)}
         onSearch={setSearch}
@@ -29,18 +29,21 @@ function App() {
         onSelectCategory={setCategorySelected}
       />
 
-      <div className="container">
-        {filteredGames.map((game) => (
-          <Card key={game.id} {...game} />
-        ))}
-      </div>
+      <main className="main-content">
+        <div className="container">
+          {filteredGames.length === 0 && search ? (
+            <p className="empty-message">
+              No se encontraron juegos para tu búsqueda 😢
+            </p>
+          ) : (
+            filteredGames.map((game) => <Card key={game.id} {...game} />)
+          )}
+        </div>
+      </main>
 
-      <Footer/>
-    </>
+      <Footer />
+    </div>
   );
 }
 
 export default App;
-
-
-

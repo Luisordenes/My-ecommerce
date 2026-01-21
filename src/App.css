@@ -3,6 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }
 
 .container {
@@ -13,4 +20,10 @@
   justify-content: center;
 }
 
-
+.empty-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #888;
+}

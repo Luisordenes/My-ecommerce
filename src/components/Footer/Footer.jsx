@@ -18,7 +18,7 @@ function Footer() {
 
           <div className="footer-column">
                 <h3 className="footer-title">Tiempo de envíos</h3>
-                <p>El envío de tu juego puede tardar de 30 minutos a 4 horas dependiendo el juego.</p>
+                <p>El envío de tu producto estara sujeto a la demanda</p>
                 <p>Horarios de envíos: Todos los días de 12:00 hrs a 21:00 hrs</p>
           </div>
 

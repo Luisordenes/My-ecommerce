@@ -1,0 +1,19 @@
+.main-content {
+  flex: 1;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.empty-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #888;
+}

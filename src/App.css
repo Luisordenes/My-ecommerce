@@ -19,11 +19,3 @@
   gap: 16px;
   justify-content: center;
 }
-
-.empty-message {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-top: 40px;
-  font-size: 1.2rem;
-  color: #888;
-}

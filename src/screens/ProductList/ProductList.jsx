@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Card, Navbar, Footer } from "../../components";
-import "./ProductList.css";
 import { filterByCategory, filterBySearch } from "../../utils/filters";
+import LoadingGif from "../../assets/gifs/loading.gif";
+import "./ProductList.css";
 
 const ProductList = () => {
   const [loading, setLoading] = useState(true);
@@ -43,12 +44,14 @@ const ProductList = () => {
       <Navbar
         onSelectCategory={setCategorySelected}
         onSearch={setSearch}
-        onShowSales={() => setShowOnlySales(prev => !prev)}
+        onShowSales={() => setShowOnlySales((prev) => !prev)}
         categories={categories}
+        categorySelected={categorySelected}
+        showOnlySales={showOnlySales}
       />
 
       <main className="main-content">
-        {loading && <h1>Estoy cargando</h1>}
+        {loading && <img src={LoadingGif} alt="Loading..." />}
 
         {error && !loading && <h1>{error.message}</h1>}
 
@@ -80,4 +83,3 @@ const ProductList = () => {
 };
 
 export default ProductList;
-

@@ -10,12 +10,13 @@
 
 .main-content {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.container {
-  margin-top: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
+.sale-gif {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
 }

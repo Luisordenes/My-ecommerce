@@ -1,0 +1,11 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}

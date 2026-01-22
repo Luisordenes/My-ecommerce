@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import  Logo  from "../../Logo/Logo";
+import "./NavbarBrand.css";
 
 function NavbarBrand() {
   return (

@@ -1,11 +1,14 @@
 import "./App.css";
 import { Navbar, Footer } from "./components";
+import SaleGif from './assets/gifs/Sale.gif'
 
 function App() {
-  
   return (
     <div id="root">
-      <Navbar/>
+      <Navbar />
+      <main className="main-content">
+        <img src={SaleGif} alt="SALE" className="sale-gif" />
+      </main>
       <Footer />
     </div>
   );

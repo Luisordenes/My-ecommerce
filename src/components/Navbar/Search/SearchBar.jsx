@@ -1,12 +1,15 @@
-function SearchBar({ onSearch }) {
+import "./SearchBar.css";
+
+const SearchBar = ({ onSearch }) => {
   return (
     <input
       type="text"
-      placeholder="Buscar productos..."
+      placeholder="Buscar..."
       className="search-input"
       onChange={(e) => onSearch(e.target.value)}
     />
   );
-}
+};
 
 export default SearchBar;
+

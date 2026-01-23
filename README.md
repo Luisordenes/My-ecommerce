@@ -43,4 +43,26 @@ Pasos para ejecutar proyecto:
 
 # React + Vite
 
+Principal
 ![Alt Principal](./src/assets/images/Principal.JPG)
+
+Captura Error
+![Alt Captura error](./src/assets/images/Captura%20Error.JPG)
+
+Productos
+![Alt Productos](./src/assets/images/Productos.JPG)
+
+Filtro Categoria
+![Alt Filtro Categoria](./src/assets/images/Filtro%20categoria.jpg)
+
+Filtro Ofertas
+![Alt Filtro Ofertas](./src/assets/images/Filtro%20ofertas.jpg)
+
+Filtro Busqueda
+![Alt Filtro Busqueda](./src/assets/images/Mensaje%20filtro%20busqueda.jpg)
+
+Mensaje filtro busqueda
+![Alt Mensaje filtro busqueda](./src/assets/images/Mensaje%20filtro%20busqueda.jpg)
+
+Cards con botones y aplicacion de isSale y isSoldOut
+![Alt Cards](./src/assets/images/Cards%20con%20botones%20y%20aplicacion%20de%20isSale%20y%20isSoldOut.jpg)

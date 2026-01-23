@@ -62,7 +62,7 @@ Filtro Ofertas
 
 Filtro Busqueda
 
-![Alt Filtro Busqueda](./src/assets/images/Mensaje%20filtro%20busqueda.jpg)
+![Alt Filtro Busqueda](./src/assets/images/Filtro%20busqueda.jpg)
 
 Mensaje filtro busqueda
 

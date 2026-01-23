@@ -16,8 +16,9 @@ Componentes creados:
 - ProductState /Maneja los estadosde carga, error y ausencia de datos para la lista de productos (Loader con gif/ErrorMessage)
 
 
-- Services: productService.js para llamar a la api y traer los productos.
+Api y Route:
 
+- Services: productService.js para llamar a la api y traer los productos.
 - Route: Use route dentro del NavbarBrand "DigiMercado" para ir a la pagina raiz "/".
 - Route: Use route en el boton del Navbar "Productos" para ir a la pagina "/product-list"
 

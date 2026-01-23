@@ -71,3 +71,7 @@ Mensaje filtro busqueda
 Cards con botones y aplicacion de isSale y isSoldOut
 
 ![Alt Cards](./src/assets/images/Cards%20con%20botones%20y%20aplicacion%20de%20isSale%20y%20isSoldOut.jpg)
+
+Loading
+
+![Alt Loading](./src/assets/images/Loading.jpg)

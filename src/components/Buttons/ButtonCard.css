@@ -1,0 +1,57 @@
+.card-button {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #2ecc71;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  background-color: #27ae60;
+}
+
+.quantity-control button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.quantity-control span {
+  color: white;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.add-to-cart {
+  flex: 1;
+  border: none;
+  background-color: #2ecc71;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-button button:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-button.disabled {
+  background-color: #ccc;
+}
+
+.card-button.disabled .quantity-control,
+.card-button.disabled .add-to-cart {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.card-button.disabled button {
+  cursor: not-allowed;
+}

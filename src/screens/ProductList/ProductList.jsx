@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Card, Navbar, Footer } from "../../components";
-import { filterByCategory, filterBySearch } from "../../utils/filters";
-import LoadingGif from "../../assets/gifs/loading.gif";
+import {
+  Navbar,
+  Footer,
+  ProductsState,
+  ProductGrid,
+} from "../../components/index";
 import "./ProductList.css";
+import { useFilteredProducts } from "../../hooks/useFilteredProducts";
+import { getProducts } from "../../services/productsService";
 
 const ProductList = () => {
   const [loading, setLoading] = useState(true);
@@ -11,23 +16,18 @@ const ProductList = () => {
   const [categorySelected, setCategorySelected] = useState("");
   const [search, setSearch] = useState("");
   const [showOnlySales, setShowOnlySales] = useState(false);
-
   const categories = [...new Set(data.map((product) => product.category))];
+  const filteredProducts = useFilteredProducts({
+    products: data,
+    categorySelected,
+    search,
+    showOnlySales,
+  });
 
-  let filteredByCategory = filterByCategory(data, categorySelected);
-  let filteredProducts = filterBySearch(filteredByCategory, search);
-
-  if (showOnlySales) {
-    filteredProducts = filteredProducts.filter(
-      (p) => p.discountPercentage > 15
-    );
-  }
-
-  const getProducts = async () => {
+  const loadProducts = async () => {
     try {
-      const response = await fetch("https://dummyjson.com/products");
-      const json = await response.json();
-      setData(json.products);
+      const products = await getProducts();
+      setData(products);
     } catch (err) {
       setError(err);
     } finally {
@@ -36,7 +36,7 @@ const ProductList = () => {
   };
 
   useEffect(() => {
-    getProducts();
+    loadProducts();
   }, []);
 
   return (
@@ -51,28 +51,15 @@ const ProductList = () => {
       />
 
       <main className="main-content">
-        {loading && <img src={LoadingGif} alt="Loading..." />}
-
-        {error && !loading && <h1>{error.message}</h1>}
-
-        {!loading && data.length === 0 && <h1>La data está vacía</h1>}
+        <ProductsState
+          loading={loading}
+          error={error}
+          isEmpty={!loading && data.length === 0}
+        />
 
         {!loading && data.length > 0 && (
           <div className="container">
-            {filteredProducts.length === 0 ? (
-              <p className="empty-message">No se encontraron productos 😢</p>
-            ) : (
-              filteredProducts.map((prd) => (
-                <Card
-                  key={prd.id}
-                  titulo={prd.title}
-                  precio={prd.price}
-                  imageURL={prd.images[0]}
-                  descuento={prd.discountPercentage}
-                  stock={prd.stock}
-                />
-              ))
-            )}
+            <ProductGrid products={filteredProducts} />
           </div>
         )}
       </main>

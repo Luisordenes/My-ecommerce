@@ -1,4 +1,4 @@
-import "./Button.css";
+import "./NavbarButton.css";
 
 function Button({ text, onClick, className = "" }) {
   return (

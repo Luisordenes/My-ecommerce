@@ -1,0 +1,15 @@
+.footer-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  text-align: left;
+  transition: color 0.2s, transform 0.1s;
+}
+
+.footer-button:hover {
+  color: #ff3d00;
+  text-decoration: underline;
+}

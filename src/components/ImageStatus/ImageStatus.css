@@ -51,3 +51,18 @@
     font-weight: bold;
     font-size: 15px;
 }
+
+.image-container {
+  position: relative;
+  background-color: #222;
+  border-radius: 14px;
+  padding: 6px;
+}
+
+.image-border {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  background-color: #2b2b2b;
+}

@@ -1,10 +1,17 @@
-.image-container {
-    position: relative;
-}
-
 .card-container {
   width: 100%;
   max-width: 220px;
-  
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 380px;
+  background-color: #222;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+.card-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
 }

@@ -1,0 +1,27 @@
+.products-state {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.products-state img {
+  width: 120px;
+}
+
+.products-state.error {
+  color: #ff3d00;
+}
+
+.products-state.error h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.products-state.error p {
+  font-size: 1rem;
+  opacity: 0.85;
+}

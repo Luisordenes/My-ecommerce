@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer } from "./components/index";
 import SaleGif from './assets/gifs/Sale.gif'
 
 function App() {

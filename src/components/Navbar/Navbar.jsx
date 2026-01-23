@@ -1,8 +1,5 @@
 import "./Navbar.css";
-import NavbarBrand from "./NavbarBrand/NavbarBrand";
-import Dropdown from "./Dropdown/Dropdown";
-import SearchBar from "./Search/SearchBar";
-import Button from "./Button/Button";
+import {NavbarBrand, Dropdown, SearchBar, NavbarButton} from "../index";
 import { Link, useLocation } from "react-router";
 
 function Navbar({
@@ -21,9 +18,11 @@ function Navbar({
       <NavbarBrand />
 
       <div className="navbar-menu">
+
         <Link to="/product-list">
-          <Button text="Productos" className="productos-btn" />
+          <NavbarButton text="Productos" className="productos-btn" />
         </Link>
+
         {isProductList && (
           <div className="navbar-filters">
             <Dropdown
@@ -37,7 +36,7 @@ function Navbar({
                 })),
               ]}
             />
-            <Button
+            <NavbarButton
               text="🔥 Ofertas"
               className={`ofertas-btn ${showOnlySales ? "active" : ""}`}
               onClick={onShowSales}
@@ -47,9 +46,10 @@ function Navbar({
         )}
 
         <div className="navbar-actions">
-          <Button text="👤" className="icon-btn" />
-          <Button text="🛒" className="icon-btn" />
+          <NavbarButton text="👤" className="icon-btn" />
+          <NavbarButton text="🛒" className="icon-btn" />
         </div>
+        
       </div>
     </nav>
   );

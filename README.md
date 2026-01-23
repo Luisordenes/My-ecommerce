@@ -13,7 +13,7 @@ Componentes creados:
 - ProductGrid /Contenedor que organiza y muestra la lista de productos.
 - ProductTitle /Logica y estilo para titulo de cada Card.
 - ProductPrice /Logica y estilo para precio de cada Card.
-- ProductState /Maneja los estadosde carga, error y ausencia de datos para la lista de productos.
+- ProductState /Maneja los estadosde carga, error y ausencia de datos para la lista de productos (Loader con gif/ErrorMessage)
 
 
 - Services: productService.js para llamar a la api y traer los productos.
